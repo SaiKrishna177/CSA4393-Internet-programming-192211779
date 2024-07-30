@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Add custom styles here for the About Us page */
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-container p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .about-form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-form-container h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .about-form-container input,
+        .about-form-container textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .about-form-container textarea {
+            resize: vertical;
+        }
+
+        .about-form-container button {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-form-container button:hover {
+            background-color: #e64a19;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <h1 class="logo">Railway</h1>
+            <ul class="menu-items">
+                <li><a href="h2.html">About Us</a></li>
+                <li><a href="p1.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-container">
+        <h1>About Us</h1>
+        <p>Providing the best railway booking service for over 10 years. Our commitment is to ensure a smooth and hassle-free experience for every traveler.</p>
+
+        <div class="about-form-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Type Your Message:</label>
+                <textarea id="message" name="message" cols="30" rows="6" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2>Railway Ticket Booking &copy; 2024 All Rights Reserved</h2>
+    </footer>
+</body>
+
+</html>
