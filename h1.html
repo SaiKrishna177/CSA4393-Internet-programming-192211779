@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Railway Ticket Booking</title>
+    <style>
+        /* Add custom styles here for the railway ticket booking homepage */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu-items {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-items li {
+            margin: 0 15px;
+        }
+
+        .menu-items a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .showcase-area {
+            background-image: url("image 0.jpg");
+            background-size: cover; /* Ensures the image covers the area */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center center; /* Centers the background image */
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            height: 100vh;
+            position: relative; /* Ensures that the height is respected */
+            overflow: hidden; /* Prevents overflow issues */
+        }
+
+        .showcase-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .showcase-area h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .showcase-area p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .food-type {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .food-type img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .food-menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .food-menu-item {
+            width: 30%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-menu-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .food-description {
+            padding: 15px;
+        }
+
+        .food-price {
+            font-weight: bold;
+            color: #ff5722;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .testimonial-box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        .testimonial-box .customer-photo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .testimonial-box img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .star-rating .fa-star {
+            color: #ff5722;
+        }
+
+        .contact-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .food-type, .food-menu-item {
+                width: 100%;
+            }
+
+            .food-container, .food-menu-container {
+                flex-direction: column;
+            }
+
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <h1 class="logo">Railway</h1>
+            <ul class="menu-items">
+                <li><a href="h2.html">About Us</a></li>
+                <li><a href="p1.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="showcase-area" id="home">
+        <div class="showcase-container">
+            <h1 class="main-title">Welcome to Railway Booking</h1>
+            <p>Efficient and convenient ticket booking at your fingertips.</p>
+            <a href="p4.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Removed "Book Ticket" section -->
+
+    <!-- Removed "Contact Us" section -->
+
+    <footer class="footer">
+        <h2>Railway Ticket Booking &copy; 2024 All Rights Reserved</h2>
+    </footer>
+</body>
+
+</html>
