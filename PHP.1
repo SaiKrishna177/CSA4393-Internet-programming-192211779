@@ -1,0 +1,19 @@
+<?php
+// Dummy credentials (for demo purposes)
+$correct_username = "admin";
+$correct_password = "1234";
+
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get values from form
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Validate credentials
+    if ($username === $correct_username && $password === $correct_password) {
+        echo "<h2>Login Successful!</h2>";
+    } else {
+        echo "<h2>Invalid Username or Password</h2>";
+    }
+}
+?>
